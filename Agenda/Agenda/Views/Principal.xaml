@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.Principal">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#F2F2F2">
+            <Label Text="       Agenda"
+               BackgroundColor="#333333"
+               TextColor="White"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               FontSize="50" WidthRequest="390" Margin="0,0,0,50" Padding="20"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Button Text="Agregar"
+                Grid.Row="0"
+                Grid.Column="0" HeightRequest="100" Margin="10,10,10,30" CornerRadius="20" BackgroundColor="#007AFF" Clicked="Btn_ClickAdd"/>
+                <Button Text="Modificar"
+                Grid.Row="0"
+                Grid.Column="1" Margin="10,10,10,30" CornerRadius="20" BackgroundColor="#007AFF" Clicked="Btn_ClickMod"/>
+                <Button Text="Consultar"
+                Grid.Row="1"
+                Grid.Column="1" Margin="10,10,10,30" CornerRadius="20" BackgroundColor="#007AFF" Clicked="Btn_ClickCosulta"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

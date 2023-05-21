@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Agenda.Views"
+             x:Class="Agenda.Views.Modificar">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Ingrese el ID a modificar" FontSize="20" HorizontalOptions="Center" Margin="0,0,0,20" />
+
+            <Entry x:Name="IdEntry" Placeholder="ID" Keyboard="Numeric" HorizontalOptions="FillAndExpand" />
+
+            <Button x:Name="BtnModificar" Text="Modificar" Clicked="Btn_Modificar" HorizontalOptions="Center" Margin="0,20,0,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

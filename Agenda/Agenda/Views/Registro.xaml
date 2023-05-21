@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.Views.Registro">
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="Nombre" TextColor="Transparent" />
+            <Frame Padding="3" CornerRadius="10">
+                <Entry MaxLength="20" Placeholder="Ingrese el nombre" BackgroundColor="#F2F2F2" PlaceholderColor="Gray" x:Name="Name" TextColor="Black"/>
+            </Frame>
+
+            <Label Text="Apellido" TextColor="Transparent" />
+            <Frame Padding="3" CornerRadius="10">
+                <Entry MaxLength="20" Placeholder="Ingrese el apellido" BackgroundColor="#F2F2F2" PlaceholderColor="Gray" TextColor="Black" x:Name="Last"/>
+            </Frame>
+
+            <Label Text="Correo" TextColor="Transparent" />
+            <Frame Padding="3" CornerRadius="10">
+                <Entry MaxLength="35" Placeholder="Ingrese el correo" BackgroundColor="#F2F2F2" PlaceholderColor="Gray" TextColor="Black" x:Name="gmail"/>
+            </Frame>
+
+            <Label Text="Teléfono" TextColor="Transparent" />
+            <Frame Padding="3" CornerRadius="10">
+                <Entry MaxLength="14" Placeholder="Ingrese el teléfono" BackgroundColor="#F2F2F2" PlaceholderColor="Gray" TextColor="Black" x:Name="tel"/>
+            </Frame>
+
+            <Label Text="Imagen" TextColor="Transparent" />
+            <Button Text="Agregar Imagen" BackgroundColor="#007AFF" TextColor="White" CornerRadius="10" Clicked="SelectImage_Clicked"/>
+
+            <!-- Aquí se agrega el ImagePreview -->
+            <Image x:Name="ImagePreview" HeightRequest="200" Margin="0,10,0,0" />
+
+            <Button Text="Agregar contacto" BackgroundColor="#007AFF" TextColor="White" Margin="0,20,0,0" CornerRadius="10" Clicked="Btn_Add"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
