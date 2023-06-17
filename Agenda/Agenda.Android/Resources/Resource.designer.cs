@@ -14,7 +14,7 @@ namespace Agenda.Droid
 {
 	
 	
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.2.0.93")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Android.Build.Tasks", "13.2.0.99")]
 	public partial class Resource
 	{
 		
@@ -18803,6 +18803,9 @@ namespace Agenda.Droid
 			
 			// aapt resource value: 0x7F0C0003
 			public const int launcher_foreground = 2131492867;
+			
+			// aapt resource value: 0x7F0C0004
+			public const int Music = 2131492868;
 			
 			static Mipmap()
 			{
