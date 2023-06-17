@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Agenda.Views"
+             xmlns:converters="clr-namespace:Agenda.Converters"
+             x:Class="Agenda.Views.Consulta">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ListView x:Name="lista_tareas" HasUnevenRows="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem 
+                                x:Name="BtnDelete"
+                                Text="Eliminar"
+                                IsDestructive="True"
+                                Clicked="BtnDelete_Clicked"
+                                CommandParameter="{Binding .}"
+                                
+                                />
+                        </ViewCell.ContextActions>
+                        <StackLayout Orientation="Horizontal" Padding="15,10" Spacing="10">
+                            <!-- Imagen -->
+                            <Frame WidthRequest="80" HeightRequest="80" CornerRadius="40" BackgroundColor="#E0E0E0">
+                                <Image Source="{Binding Imagen, Converter={StaticResource ByteArrayToImageConverter}}" Aspect="AspectFill" />
+                            </Frame>
+
+                            <StackLayout>
+                                <!-- Nombre -->
+                                <Label Text="{Binding Nombre}" FontSize="18" FontAttributes="Bold" />
+                                <!-- Apellido -->
+                                <Label Text="{Binding Apellido}" FontSize="14" />
+                                <!-- Correo -->
+                                <Label Text="{Binding Correo}" FontSize="14" TextColor="#888888" />
+                                <!-- Teléfono -->
+                                <Label Text="{Binding Telefono}" FontSize="14" TextColor="#888888" />
+                                <!-- Repertorio -->
+                                <Label Text="{Binding repertorio}" FontSize="14" TextColor="#888888"/>
+                                <!-- Costo -->
+                                <Label Text="{Binding costo}" FontSize="14" TextColor="#888888"/>
+
+                                <Label Text="Id:" FontSize="17" TextColor="Black"/>
+                                <Label Text="{Binding Id}" FontSize="14" TextColor="#888888" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+    <ContentPage.Resources>
+        <converters:ByteArrayToImageConverter x:Key="ByteArrayToImageConverter" />
+    </ContentPage.Resources>
+</ContentPage>
