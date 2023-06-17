@@ -76,11 +76,6 @@ namespace Agenda.Views
                 return;
             }
 
-            if (!IsValidEmail(gmail.Text))
-            {
-                await DisplayAlert("Advertencia", "Por favor, ingresa un correo electrónico válido.", "Aceptar");
-                return;
-            }
 
             try
             {
@@ -90,6 +85,8 @@ namespace Agenda.Views
                     Apellido = Last.Text,
                     Correo = gmail.Text,
                     Telefono = tel.Text,
+                    repertorio = rep.Text,
+                    costo = Cos.Text,
                     Imagen = imageBytes
 
                 };

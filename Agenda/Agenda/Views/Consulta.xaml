@@ -37,6 +37,10 @@
                                 <Label Text="{Binding Correo}" FontSize="14" TextColor="#888888" />
                                 <!-- Teléfono -->
                                 <Label Text="{Binding Telefono}" FontSize="14" TextColor="#888888" />
+                                <!-- Repertorio -->
+                                <Label Text="{Binding repertorio}" FontSize="14" TextColor="#888888"/>
+                                <!-- Costo -->
+                                <Label Text="{Binding costo}" FontSize="14" TextColor="#888888"/>
 
                                 <Label Text="Id:" FontSize="17" TextColor="Black"/>
                                 <Label Text="{Binding Id}" FontSize="14" TextColor="#888888" />

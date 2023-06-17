@@ -22,6 +22,13 @@
             <Label Text="Teléfono" FontSize="18" />
             <Entry x:Name="tel" Placeholder="Teléfono" />
 
+            <Label Text="Costo" FontSize="18" />
+            <Entry x:Name="Cos" Placeholder="Teléfono" />
+
+            <Label Text="Repertorio" FontSize="18" />
+            <Entry x:Name="rep" Placeholder="Teléfono" />
+
+
             <Button x:Name="BtnModificar" Text="Modificar" Clicked="Btn_Modificar" HorizontalOptions="Center" Margin="0,20,0,0" />
         </StackLayout>
     </ContentPage.Content>

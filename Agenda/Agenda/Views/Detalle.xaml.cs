@@ -26,6 +26,8 @@ namespace Agenda.Views
             Last.Text = item.Apellido;
             gmail.Text = item.Correo;
             tel.Text = item.Telefono;
+            Cos.Text = item.costo;
+            rep.Text = item.repertorio;
             ImagePreview.Source = ImageSource.FromStream(() => new MemoryStream(item.Imagen));
         }
 
@@ -80,6 +82,8 @@ namespace Agenda.Views
                 item.Apellido = Last.Text;
                 item.Correo = gmail.Text;
                 item.Telefono = tel.Text;
+                item.costo = Cos.Text;
+                item.repertorio = rep.Text;
 
                 if (imageBytes != null)
                 {

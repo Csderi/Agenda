@@ -29,9 +29,14 @@ namespace Agenda.Views
             Navigation.PushAsync(new Modificar());
         }
 
-        private void Btn_ClickCosulta(object sender, EventArgs e)
+        private void Btn_ClickConsulta(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Consulta());
+        }
+
+        private void Btn_ClickContratar(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Contratar1());
         }
 
 

@@ -15,6 +15,8 @@ namespace Agenda.Models
         public string Apellido { get; set; }
         public string Correo { get; set; }
         public string Telefono { get; set; }
+        public string costo { get; set; }
+        public string repertorio { get; set; }
         public byte[] Imagen { get; set; }
     }
 }
